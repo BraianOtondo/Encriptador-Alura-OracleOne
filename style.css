@@ -1,3 +1,53 @@
 .titulo-principal{
     padding-left: 30px;
 }
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+
+/*ancho*/
+#banner{
+    width: 100%;
+}
+.titulo-principal{
+    padding-left: 30px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+/*Especifica que tipo de strong quiero que cambia en este caso em strong*/
+em strong{
+    color: red;
+}
+/*El font size viene por defecto en 16. El tamaño de las letras
+para poner estilos a etiquetas especificas debemos ponerle id en html y llamarla con #
+*/
+#mision{
+    font-size:20px;;
+}
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+#lupa{
+    width: 10%;
+}
+
+.items{
+    font-style: italic;
+}
+ ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 20%;
+ }
+.imgDiferenciales{
+    width: 50%;
+}

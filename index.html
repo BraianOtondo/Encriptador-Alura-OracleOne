@@ -1,21 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador Alura Latam</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
 </head>
 <body>
-       <header>
-        <h1 class="titulo-principal"><u>Encriptador de texto</u></h1>
-       </header> 
-<input type="text"  id="cajaDeTexto" >
-<button onclick="encriptar()"> Encriptar </button>
-<button onclick="desencriptar()"> Desencriptar </button>
+    
+    <header>
+        <img src="img/Logo.png" alt="Logo-Alura" class="logo">
+        <h1 class="titulo-principal"><u>Encriptador Alura</u></h1>
+        <img src="img/lupa-sin-fondo.png" alt="Lupa" id="lupa">
 
+    </header>
 
-<input type="text"  id="encriptado" >
+    <main>
+        <section>
+           
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+           
+            <div>
+                <h5 class="informacion"> Solo letras minúsculas y sin acento</h5>
+            </div>
 
-<script src="app.js"></script>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()" >Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="boton-copiar" onclick="botonLimpiar()">Limpiar</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+
 </body>
 </html>
